@@ -79,6 +79,16 @@ body {
   text-decoration: underline;
 }
 
+.nav-btn {
+  padding: 1rem 2rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.nav-btn:hover {
+  background-color: #fff;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
