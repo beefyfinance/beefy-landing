@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+  head
+    title beefy
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='description' content='Yield farming for binance smart chain')
+
+    link(rel='stylesheet' href='css/minireset.min.css')
+    link(rel='stylesheet' href='css/index.css')
+    link(rel='stylesheet' href='https://use.typekit.net/avo8ruz.css' media='nope!' onload='this.media="all"')
+
+    meta(property='og:local' content='en_US')
+    meta(property='og:title' content='beefy.finance')
+    meta(property='og:description' content='Yield farming for binance smart chain')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='https://beefy.finance')
+    meta(property='og:image' content='https://beefy.finance/img/beefy.png')
+
+    meta(link rel="apple-touch-icon" href="https://beefy.finance/img/beefy.png")
+    meta(name="theme-color" content="#F9F3EB")
+
+  body
+    .plains.unselectable
+      .plain-left
+      .plain-center-bg
+      .plain-right
+      .plain-center-fg
+      .cows
+
+    .container
+      .nav.unselectable
+        .nav-left
+          img.nav-logo(src='/img/beefy.svg')
+          a.nav-item(href='#tools') beefy.finance
+        .nav-right
+          a.nav-item(href='https://gov.beefy.finance' target="_blank") $BIFI staking starts at 4pm UTC
+
+      section
+        .hero.unselectable
+          .hero-brand
+            a.hero-brand-logo(href='https://gov.beefy.finance' target="_blank")
+              img(src='/img/beefy.svg')
+            img.hero-brand-name(src='/img/name.svg')
+            span.hero-brand-brief Yield farming optimizer for Binance Smart Chain
+
+          .hero-cta
+            a.cta(href='https://twitter.com/beefyfinance' target='_blank')
+              img.cta-img(src='/img/twitter.svg')
+              .cta-lbl @beefyfinance
+
+            a.cta(href='https://medium.com/beefyfinance' target='_blank')
+              img.cta-img(src='/img/medium.svg')
+              .cta-lbl @beefyfinance
+
+            a.cta(href='https://discord.gg/UGyepS9' target='_blank')
+              img.cta-img(src='/img/discord.svg')
+              .cta-lbl @beefyfinance
+
+            a.cta(href='https://t.me/beefyfinance' target='_blank')
+              img.cta-img(src='/img/telegram.svg')
+              .cta-lbl @beefyfinance
+
+            a.cta(href='https://github.com/beefyfinance' target='_blank')
+              img.cta-img(src='/img/github.svg')
+              .cta-lbl @beefyfinance
+
+    script.
+      const cows = document.querySelector('.cows');
+      let n = Math.ceil(Math.random() * 3 ) + 3;
+
+      const arr = [];
+      for(let i = 0; i < n; i++) {
+        const r = 100 / n;
+        const x = (i + Math.random() * 0.5) * r;
+        const y = Math.ceil(Math.random() * 30) / 10 + 0.5;
+        const w = Math.round(Math.random() * 5) + 3;
+        const d = Math.random() < 0.5 ? -1 : 1;
+        arr.push(`<img class='cow' src='/img/beefy.svg' style='left: ${x}vw; bottom: ${y}rem; width: ${w}rem; transform: scaleX(${d}); z-index: ${Math.ceil(y)}' />`);
+      }
+      cows.innerHTML = arr.join('');
