@@ -240,9 +240,7 @@ body {
   width: 18rem;
   background: #fff;
   border-radius: .5rem;
-  height: 6rem;
-  overflow: hidden;
-  cursor: pointer;
+  height: auto;
   transition: all .1s ease-out;
 }
 
