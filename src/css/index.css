@@ -231,3 +231,26 @@ body {
     display: block;
   }
 }
+
+.alert {
+  position: fixed;
+  top: 8rem;
+  padding: 1rem;
+  right: 2rem;
+  width: 18rem;
+  background: #fff;
+  border-radius: .5rem;
+  height: 6rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .1s ease-out;
+}
+
+.alert:hover {
+  height: auto;
+}
+
+.alert-time {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
