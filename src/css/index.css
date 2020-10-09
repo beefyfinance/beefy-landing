@@ -117,6 +117,15 @@ body {
   width: 8rem;
   min-height: 6rem;
   margin: 1rem auto;
+  transition: all .1s ease-out;
+}
+
+.hero-brand-logo:hover {
+  transform: scale(1.1);
+}
+.hero-brand-logo:active {
+  transition: none;
+  transform: scale(0.95);
 }
 
 .hero-brand-name {
