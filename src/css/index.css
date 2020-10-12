@@ -97,6 +97,12 @@ body {
   background-color: #000;
 }
 
+.nav-txt {
+  padding: .5rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
