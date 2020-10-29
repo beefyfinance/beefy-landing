@@ -152,18 +152,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-around;
+  justify-content: center;
+  padding-top: 1.5rem;
 }
 
 .cta {
   display: flex;
   align-content: center;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin: 0 1rem;
+  transition: all .1s ease-out; 
 }
 
 .cta:hover {
-  text-decoration: underline;
+  transform: scale(1.3);
+}
+
+.cta:active {
+  transform: scale(0.9);
 }
 
 .cta-img {
