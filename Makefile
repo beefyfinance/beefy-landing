@@ -18,7 +18,7 @@ static: dir
 	cp $(SRC)/favicon.ico $(SRC)/robots.txt $(OUT)/
 	cp -rf $(SRC)/img $(OUT)/img
 	cp -rf $(SRC)/css $(OUT)/css
-	#cp -rf $(SRC)/js $(OUT)/js
+	cp -rf $(SRC)/vaults $(OUT)/vaults
 
 landing: dir
 	pug -b src < $(SRC)/pug/index.pug > $(OUT)/index.html
