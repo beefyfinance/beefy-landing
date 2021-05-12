@@ -12,7 +12,29 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width:  768px) { html { font-size: 12px; } }
+.nav-mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width:  768px) { 
+  html { font-size: 12px; }
+  body{ overflow: hidden }
+  .nav-img { display: none; }
+
+  .nav-img-mob {
+    flex-direction: column;
+    margin: 0 1rem 3rem;
+    transition: all .1s ease-out;
+    width: 1.6rem;
+  }
+
+  .nav-mobile-only {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
 @media only screen and (min-width:  769px) { html { font-size: 13px; } }
 @media only screen and (min-width: 1024px) { html { font-size: 14px; } }
 @media only screen and (min-width: 1200px) { html { font-size: 15px; } }
@@ -52,6 +74,7 @@ body {
   justify-content: space-between;
   padding: 2rem 0 0;
 }
+
 
 .nav-left {
   display: inline-flex;
@@ -190,6 +213,8 @@ body {
   margin-right: 1.5rem;
   align-content: center;
 }
+
+
 
 .cta-lbl {
   font-weight: 900;
