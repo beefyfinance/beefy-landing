@@ -32,8 +32,26 @@ html(lang='en')
       .nav.unselectable
         .nav-left
           img.nav-logo(src='/img/beefy.svg')
-          a.nav-item(href='#moo!') beefy.finance
+          a.nav-item(href='#moo!') Beefy.Finance
         .nav-right
+          a.nav-item(href='https://twitter.com/beefyfinance' target='_blank')
+            img.nav-img(src='/img/twitter.svg')
+
+          a.nav-item(href='https://medium.com/beefyfinance' target='_blank')
+            img.nav-img(src='/img/medium.svg')
+              
+          a.nav-item(href='https://discord.gg/yq8wfHd' target='_blank')
+            img.nav-img(src='/img/discord.svg')
+            
+          a.nav-item(href='https://t.me/beefyfinance' target='_blank')
+            img.nav-img(src='/img/telegram.svg')
+            
+          a.nav-item(href='https://github.com/beefyfinance' target='_blank')
+            img.nav-img(src='/img/github.svg')
+            
+          a.nav-item(href='https://docs.beefy.finance' target='_blank')
+            img.nav-img(src='/img/gitbook.svg')
+
           a.nav-item.nav-btn(href='https://app.beefy.finance' target="_blank") Launch App
 
       section
@@ -41,27 +59,44 @@ html(lang='en')
           .hero-brand
             a.hero-brand-logo(href='https://app.beefy.finance' target="_blank")
               img(src='/img/beefy.svg')
-            img.hero-brand-name(src='/img/name.svg')
+            img.hero-brand-name(src='/img/name.png')
             span.hero-brand-brief Multi-Chain Yield Farming
 
           .hero-cta
-            a.cta(href='https://twitter.com/beefyfinance' target='_blank')
-              img.cta-img(src='/img/twitter.svg')
+            a.cta(href='https://app.beefy.finance' target='_blank')
+              img.cta-img(src='/img/BSC.png')
               
-            a.cta(href='https://medium.com/beefyfinance' target='_blank')
-              img.cta-img(src='/img/medium.svg')
+            a.cta(href='https://avax.beefy.finance' target='_blank')
+              img.cta-img(src='/img/Avalanche.png')
               
-            a.cta(href='https://discord.gg/yq8wfHd' target='_blank')
-              img.cta-img(src='/img/discord.svg')
+            a.cta(href='https://heco.beefy.finance' target='_blank')
+              img.cta-img(src='/img/HECO.png')
+            
+            a.cta(href='https://polygon.beefy.finance' target='_blank')
+              img.cta-img(src='/img/Polygon.png')
+
+            a.cta(href='https://fantom.beefy.finance' target='_blank')
+              img.cta-img(src='/img/Fantom.png')
+        
+      mobile-section
+        .nav-mobile-only
+          a.nav-item(href='https://twitter.com/beefyfinance' target='_blank')
+            img.nav-img-mob(src='/img/twitter.svg')
+
+          a.nav-item(href='https://medium.com/beefyfinance' target='_blank')
+            img.nav-img-mob(src='/img/medium.svg')
               
-            a.cta(href='https://t.me/beefyfinance' target='_blank')
-              img.cta-img(src='/img/telegram.svg')
-              
-            a.cta(href='https://github.com/beefyfinance' target='_blank')
-              img.cta-img(src='/img/github.svg')
-              
-            a.cta(href='https://docs.beefy.finance' target='_blank')
-              img.cta-img(src='/img/gitbook.svg')
+          a.nav-item(href='https://discord.gg/yq8wfHd' target='_blank')
+            img.nav-img-mob(src='/img/discord.svg')
+            
+          a.nav-item(href='https://t.me/beefyfinance' target='_blank')
+            img.nav-img-mob(src='/img/telegram.svg')
+            
+          a.nav-item(href='https://github.com/beefyfinance' target='_blank')
+            img.nav-img-mob(src='/img/github.svg')
+            
+          a.nav-item(href='https://docs.beefy.finance' target='_blank')
+            img.nav-img-mob(src='/img/gitbook.svg')
 
               
     script.
@@ -72,8 +107,8 @@ html(lang='en')
       for(let i = 0; i < n; i++) {
         const r = 100 / n;
         const x = (i + Math.random() * 0.5) * r;
-        const y = Math.ceil(Math.random() * 30) / 10 + 0.5;
-        const w = Math.round(Math.random() * 5) + 3;
+        const y = Math.ceil(Math.random() * 30) / 10;
+        const w = Math.round(Math.random() * 3.5) + 2.5;
         const d = Math.random() < 0.5 ? -1 : 1;
         arr.push(`<img class='cow' src='/img/beefy.svg' style='left: ${x}vw; bottom: ${y}rem; width: ${w}rem; transform: scaleX(${d}); z-index: ${Math.ceil(y)}' />`);
       }
