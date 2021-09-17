@@ -15,9 +15,9 @@ html(lang='en')
     meta(property='og:description' content='Multi-Chain Yield Farming')
     meta(property='og:type' content='website')
     meta(property='og:url' content='https://beefy.finance')
-    meta(property='og:image' content='https://beefy.finance/img/beefy.png')
+    meta(property='og:image' content='https://beefy.finance/img/COW.svg')
 
-    meta(link rel="apple-touch-icon" href="https://beefy.finance/img/beefy.png")
+    meta(link rel="apple-touch-icon" href="https://beefy.finance/img/COW.svg")
     meta(name="theme-color" content="#F9F3EB")
 
   body
@@ -31,7 +31,7 @@ html(lang='en')
     .container
       .nav.unselectable
         .nav-left
-          img.nav-logo(src='/img/beefy.svg')
+          img.nav-logo(src='/img/COW.svg')
           a.nav-item(href='#moo!') Beefy.Finance
         .nav-right
           a.nav-item(href='https://www.reddit.com/r/Beefy/' target='_blank')
@@ -50,7 +50,7 @@ html(lang='en')
             img.nav-img(src='/img/discord.svg')
             
           a.nav-item(href='https://t.me/beefyfinance' target='_blank')
-            img.nav-img(src='/img/telegram.svg')
+            img.nav-img(src='/img/TG.svg')
             
           a.nav-item(href='https://github.com/beefyfinance' target='_blank')
             img.nav-img(src='/img/github.svg')
@@ -64,34 +64,39 @@ html(lang='en')
         .hero.unselectable
           .hero-brand
             a.hero-brand-logo(href='https://app.beefy.finance' target="_blank")
-              img(src='/img/beefy.svg')
-            img.hero-brand-name(src='/img/name.png')
+              img(src='/img/COW.svg')
+            img.hero-brand-name(src='/img/Beefy.Finance.svg')
             span.hero-brand-brief The Multichain Yield Optimizer
 
           .hero-cta
             a.cta(href='https://app.beefy.finance/#/bsc' target='_blank')
-              img.cta-img(src='/img/BSC.png') 
+              img.cta-img(src='/img/BSC.svg') 
               span.pop-chain-name BSC
               
             a.cta(href='https://app.beefy.finance/#/avax' target='_blank')
-              img.cta-img(src='/img/Avalanche.png')
+              img.cta-img(src='/img/AVALANCHE.svg')
               span.pop-chain-name AVAX
               
             a.cta(href='https://app.beefy.finance/#/heco' target='_blank')
-              img.cta-img(src='/img/HECO.png')
+              img.cta-img(src='/img/HECO.svg')
               span.pop-chain-name HECO
             
             a.cta(href='https://app.beefy.finance/#/polygon' target='_blank')
-              img.cta-img(src='/img/Polygon.png')
+              img.cta-img(src='/img/POLYGON.svg')
               span.pop-chain-name Polygon
 
             a.cta(href='https://app.beefy.finance/#/fantom' target='_blank')
-              img.cta-img(src='/img/Fantom.png')
+              img.cta-img(src='/img/FANTOM.svg')
               span.pop-chain-name Fantom
 
             a.cta(href='https://app.beefy.finance/#/harmony' target='_blank')
-              img.cta-img(src='/img/Harmony.png')
+              img.cta-img(src='/img/HARMONY.svg')
               span.pop-chain-name Harmony
+
+            a.cta(href='https://app.beefy.finance/#/arbitrum' target='_blank')
+              img.cta-img(src='/img/ARBITRUM.svg')
+              span.pop-chain-name soon
+
 
       mobile-section
         .nav-mobile-only
@@ -111,7 +116,7 @@ html(lang='en')
             img.nav-img-mob(src='/img/discord.svg')
             
           a.nav-item(href='https://t.me/beefyfinance' target='_blank')
-            img.nav-img-mob(src='/img/telegram.svg')
+            img.nav-img-mob(src='/img/TG.svg')
             
           a.nav-item(href='https://github.com/beefyfinance' target='_blank')
             img.nav-img-mob(src='/img/github.svg')
@@ -131,6 +136,6 @@ html(lang='en')
         const y = Math.ceil(Math.random() * 30) / 10;
         const w = Math.round(Math.random() * 3.5) + 2.5;
         const d = Math.random() < 0.5 ? -1 : 1;
-        arr.push(`<img class='cow' src='/img/beefy.svg' style='left: ${x}vw; bottom: ${y}rem; width: ${w}rem; transform: scaleX(${d}); z-index: ${Math.ceil(y)}' />`);
+        arr.push(`<img class='cow' src='/img/COW.svg' style='left: ${x}vw; bottom: ${y}rem; width: ${w}rem; transform: scaleX(${d}); z-index: ${Math.ceil(y)}' />`);
       }
       cows.innerHTML = arr.join('');
